@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 17:26:33 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/21 17:26:36 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:27:19 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-
-// int	main()
-// {
-// 	char str[] = "Hola carlos";
-
-// 	printf("%s", ft_strchr(str, 'c'));
-// 	return 0;
-// }

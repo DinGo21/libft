@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 19:56:01 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/21 19:56:04 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:28:36 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,3 @@ int	ft_atoi(const char *str)
 		return (-result);
 	return (result);
 }
-
-// int main() {
-// 	char string[] = "++2356245b4";
-//
-// 	printf("%d", ft_atoi(string));
-// 	return 0;
-// }

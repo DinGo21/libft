@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 17:59:38 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/28 17:59:40 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:26:35 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (ft_substr(s1, i, size - i + 1));
 }
-
-// int	main()
-// {
-// 	printf("%s", ft_strtrim("", "cdef"));
-// 	return 0;
-// }

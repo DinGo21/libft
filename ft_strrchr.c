@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 17:52:37 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/21 17:52:39 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:26:31 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// int	main()
-// {
-// 	char str[] = "pepe y cparlos";
-
-// 	printf("%s", strrchr(str, 'c'));
-// 	return 0;
-// }

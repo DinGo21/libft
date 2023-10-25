@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 17:22:56 by disantam          #+#    #+#             */
-/*   Updated: 2023/09/19 16:45:12 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:27:15 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ char	*ft_strdup(const char *s1)
 	}
 	return (str);
 }
-
-// int main()
-// {
-// 	char string[] = "Hola Mundo";
-
-// 	printf("%s", ft_strdup(string));
-// 	return (0);
-// }

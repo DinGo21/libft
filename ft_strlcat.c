@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 16:44:28 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/21 16:44:30 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:27:04 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (i - j + ft_strlen(src));
 }
 
-// int main() {
-// 	char s1[11] = "hola";
-// 	char s2[5] = "mano";
-
-// 	printf("%lu\n", ft_strlcat(s1, s2, 8));
-// 	printf("%s", s1);
-
-// 	return 0;
-// }

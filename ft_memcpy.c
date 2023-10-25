@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:32:57 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/25 16:32:58 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:27:39 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dststr);
 }
-
-// int main ()
-// {
-// 	char str[] = "Hola Mundo";
-// 	char str1[] = "Hola Diegopapu";
-
-// 	printf("%s", ft_memcpy(str, str1, 11));
-// 	return (0);
-// }

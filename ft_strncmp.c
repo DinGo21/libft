@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 18:08:08 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/21 18:08:10 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:26:52 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 	return (0);
 }
-
-// int main()
-// {
-// 	char str1[] = "zyxbcdefgh";
-// 	char str2[] = "abcdwxyz";
-
-// 	printf("%d", ft_strncmp(str1, str2, 0));
-// 	return (0);
-// }

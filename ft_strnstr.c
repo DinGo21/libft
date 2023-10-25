@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 19:44:43 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/21 19:44:45 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:26:46 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-// int main() {
-// 	char str1[] = "HelWo WoWorld";
-// 	char str2[] = "World";
-
-// 	printf("%s", ft_strnstr(str1, str2, 6));
-
-// 	return 0;
-// }

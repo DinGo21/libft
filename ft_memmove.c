@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:48:50 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/25 16:48:51 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:27:35 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dststr);
 }
-
-// int main ()
-// {
-// 	char str1[] = "Hola Mundo";
-
-// 	printf("%s", ft_memmove(str1 + 3, str1, 8));
-// 	return (0);
-// }

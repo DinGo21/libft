@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 18:18:57 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/21 18:18:59 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:27:49 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-// int	main()
-// {
-// 	char str[] = ".X....b].oe.^...e.P.z.n....iS...E....%......b";
-
-// 	printf("%s", (char *)ft_memchr(str, 'i', 33));
-// 	return 0;
-// }
