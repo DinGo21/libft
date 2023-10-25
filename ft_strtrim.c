@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 17:59:38 by disantam          #+#    #+#             */
-/*   Updated: 2023/10/25 16:26:35 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:29:32 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,19 +24,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (set[j] != '\0')
 		if (s1[i] != set[j])
 			j++;
-	else
-	{
-		i++;
-		j = 0;
-	}
+		else
+		{
+			i++;
+			j = 0;
+		}
 	j = 0;
 	while (set[j] != '\0')
 		if (s1[size] != set[j])
 			j++;
-	else
-	{
-		size--;
-		j = 0;
-	}
+		else
+		{
+			size--;
+			j = 0;
+		}
 	return (ft_substr(s1, i, size - i + 1));
 }
