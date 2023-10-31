@@ -6,13 +6,14 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 19:10:53 by disantam          #+#    #+#             */
-/*   Updated: 2023/09/19 11:28:14 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/31 11:15:57 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include "ft_printf/ft_printf.h"
 # include <string.h>
 # include <unistd.h>
 # include <strings.h>

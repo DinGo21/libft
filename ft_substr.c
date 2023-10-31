@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 17:55:43 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/24 17:55:44 by disantam         ###   ########.fr       */
+/*   Updated: 2023/10/31 12:11:40 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
