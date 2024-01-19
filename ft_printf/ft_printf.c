@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 16:43:50 by disantam          #+#    #+#             */
-/*   Updated: 2023/10/31 12:00:26 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/19 16:07:24 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,13 @@ int	ft_printf(char const *s, ...)
 	while (s[i] != '\0')
 	{
 		if (s[i] != '%')
+		{
 			c += write(1, s + i, 1);
+		}
 		else
+		{
 			c += ft_printf_check(s[++i], args);
+		}
 		i++;
 	}
 	va_end(args);

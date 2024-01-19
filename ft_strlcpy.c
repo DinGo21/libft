@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 16:52:43 by disantam          #+#    #+#             */
-/*   Updated: 2023/09/04 14:01:40 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 12:06:30 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		dst[i] = '\0';
 	}
 	while (src[j] != '\0')
+	{
 		j++;
+	}
 	return (j);
 }

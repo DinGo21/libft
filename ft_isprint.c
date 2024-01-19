@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:40:59 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/18 16:41:03 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 11:48:26 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
+	{
 		return (1);
+	}
 	return (0);
 }

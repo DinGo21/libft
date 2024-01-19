@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 11:52:37 by disantam          #+#    #+#             */
-/*   Updated: 2023/05/23 11:52:39 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 12:05:34 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 
 	i = -1;
 	while (s[++i] != '\0')
+	{
 		f(i, s + i);
+	}
 }

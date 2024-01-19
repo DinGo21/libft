@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putndl_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 13:10:27 by disantam          #+#    #+#             */
-/*   Updated: 2023/05/23 13:10:29 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 11:53:26 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ void	ft_putendl_fd(char *s, int fd)
 
 	i = 0;
 	while (s[i] != '\0')
+	{
 		i++;
+	}
 	write(fd, s, i);
 	write(fd, "\n", 1);
 }

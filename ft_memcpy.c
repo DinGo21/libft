@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:32:57 by disantam          #+#    #+#             */
-/*   Updated: 2023/10/25 16:27:39 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 11:53:40 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*srcstr;
 
 	if (dst == 0 && src == 0)
+	{
 		return (NULL);
+	}
 	i = 0;
 	dststr = dst;
 	srcstr = (char *)src;

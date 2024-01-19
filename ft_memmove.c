@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:48:50 by disantam          #+#    #+#             */
-/*   Updated: 2023/10/25 16:27:35 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 12:07:44 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	if (dst > src)
 	{
 		while (len-- > 0)
+		{
 			dststr[len] = srcstr[len];
+		}
 	}
 	else
 	{

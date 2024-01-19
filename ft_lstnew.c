@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 10:44:28 by disantam          #+#    #+#             */
-/*   Updated: 2023/05/24 10:44:29 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/19 15:58:52 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ t_list	*ft_lstnew(void *content)
 
 	new = malloc(sizeof(t_list));
 	if (new == NULL)
+	{
 		return (NULL);
-	new -> content = content;
-	new -> next = NULL;
+	}
+	new->content = content;
+	new->next = NULL;
 	return (new);
 }

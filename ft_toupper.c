@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 17:41:05 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/25 17:41:07 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 12:09:33 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
+	{
 		return (c - 32);
+	}
 	return (c);
 }

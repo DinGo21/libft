@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 19:56:01 by disantam          #+#    #+#             */
-/*   Updated: 2023/10/25 16:28:36 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 11:46:52 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ int	ft_atoi(const char *str)
 		str++;
 	}
 	while (*str != '\0' && *str >= '0' && *str <= '9')
+	{
 		result = result * 10 + (*str++ - '0');
+	}
 	if (sign == '-')
 		return (-result);
 	return (result);

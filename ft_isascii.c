@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:27:23 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/18 16:27:25 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 11:48:03 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
+	{
 		return (1);
+	}
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:48:23 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/18 16:48:51 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 12:06:39 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlen(const char *s)
 
 	i = 0;
 	while (s[i] != '\0')
+	{
 		i++;
+	}
 	return (i);
 }

@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 16:44:28 by disantam          #+#    #+#             */
-/*   Updated: 2023/10/25 16:27:04 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 12:06:20 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	while (dst[i] && i < size)
 		i++;
 	if (!(i < size))
+	{
 		return (i + ft_strlen(src));
+	}
 	else
 	{
 		while (i < size - 1 && src[j])

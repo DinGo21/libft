@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 18:35:54 by disantam          #+#    #+#             */
-/*   Updated: 2023/10/31 11:36:29 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/19 16:10:16 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ static int	ft_litoa_len(long n)
 
 	len = 0;
 	if (n <= 0)
+	{
 		len++;
+	}
 	while (n != 0)
 	{
 		n /= 10;
@@ -35,10 +37,14 @@ static char	*ft_litoa(long n)
 	len = ft_litoa_len(n);
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
+	{
 		return (NULL);
+	}
 	str[len--] = '\0';
 	if (n == 0)
+	{
 		str[0] = '0';
+	}
 	if (n < 0)
 	{
 		str[0] = '-';
@@ -58,7 +64,9 @@ static int	ft_uitoa_len(size_t n)
 
 	len = 0;
 	if (n == 0)
+	{
 		len++;
+	}
 	while (n != 0)
 	{
 		n /= 10;
@@ -75,10 +83,14 @@ static char	*ft_uitoa(size_t n)
 	len = ft_uitoa_len(n);
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
+	{
 		return (NULL);
+	}
 	str[len--] = '\0';
 	if (n == 0)
+	{
 		str[0] = '0';
+	}
 	while (n > 0)
 	{
 		str[len--] = (n % 10) + '0';
@@ -93,12 +105,18 @@ int	ft_dec(long n, char f)
 	char	*str;
 
 	if (f == 'd' || f == 'i')
+	{
 		str = ft_litoa(n);
+	}
 	else
+	{
 		str = ft_uitoa(n);
+	}
 	c = -1;
 	while (str[++c] != '\0')
+	{
 		write(1, str + c, 1);
+	}
 	free(str);
 	return (c);
 }

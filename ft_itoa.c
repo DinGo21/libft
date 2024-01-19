@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 19:42:00 by disantam          #+#    #+#             */
-/*   Updated: 2023/05/18 19:42:03 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 11:47:19 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,9 @@ char	*ft_itoa(int n)
 		return (NULL);
 	str[len--] = '\0';
 	if (i == 0)
+	{
 		str[0] = '0';
+	}
 	if (i < 0)
 	{
 		str[0] = '-';

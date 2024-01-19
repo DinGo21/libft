@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <diego.antoniosantamaria@gmail.c  +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:11:38 by disantam          #+#    #+#             */
-/*   Updated: 2023/04/18 16:12:19 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 12:07:14 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
+	{
 		return (1);
+	}
 	return (0);
 }

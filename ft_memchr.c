@@ -6,7 +6,7 @@
 /*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 18:18:57 by disantam          #+#    #+#             */
-/*   Updated: 2023/10/25 16:27:49 by disantam         ###   ########.fr       */
+/*   Updated: 2024/01/17 12:01:32 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,10 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == (unsigned char)c)
+		{
 			return ((void *)str + i);
+		}
 		i++;
 	}
 	return (NULL);
 }
-
