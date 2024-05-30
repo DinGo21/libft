@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/26 11:53:00 by disantam          #+#    #+#             */
-/*   Updated: 2024/01/19 16:01:33 by disantam         ###   ########.fr       */
+/*   Created: 2023/05/24 11:36:04 by disantam          #+#    #+#             */
+/*   Updated: 2024/05/30 10:49:20 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_lists.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	t_list	*node;
-
-	while (*lst != NULL)
+	if (*lst == NULL)
 	{
-		node = *lst;
-		*lst = node->next;
-		del(node->content);
-		free(node);
+		*lst = new;
+		new->next = NULL;
 	}
-	lst = NULL;
+	else
+	{
+		new->next = *lst;
+		*lst = new;
+	}
 }

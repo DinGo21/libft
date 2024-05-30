@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 16:43:50 by disantam          #+#    #+#             */
-/*   Updated: 2024/01/19 16:07:24 by disantam         ###   ########.fr       */
+/*   Updated: 2024/05/29 16:00:30 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <stdio.h>
 
-int static	ft_printf_check(int f, va_list args)
+static int	ft_printf_check(int f, va_list args)
 {
 	int	c;
 

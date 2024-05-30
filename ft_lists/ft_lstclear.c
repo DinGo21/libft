@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/26 12:14:24 by disantam          #+#    #+#             */
-/*   Updated: 2024/01/19 16:01:21 by disantam         ###   ########.fr       */
+/*   Created: 2023/05/26 11:53:00 by disantam          #+#    #+#             */
+/*   Updated: 2024/05/30 10:49:28 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_lists.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	while (lst != NULL)
+	t_list	*node;
+
+	while (*lst != NULL)
 	{
-		f(lst->content);
-		lst = lst->next;
+		node = *lst;
+		*lst = node->next;
+		del(node->content);
+		free(node);
 	}
+	lst = NULL;
 }

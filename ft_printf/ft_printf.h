@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: disantam <disantam@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: disantam <disantam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 18:19:39 by disantam          #+#    #+#             */
-/*   Updated: 2024/03/19 15:35:50 by disantam         ###   ########.fr       */
+/*   Updated: 2024/05/29 15:44:42 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "../libft.h"
-# include <stdlib.h>
 # include <stdarg.h>
-# include <unistd.h>
+# include "../libft.h"
 
 /**
  * @brief Sends formatted output to stdout.
