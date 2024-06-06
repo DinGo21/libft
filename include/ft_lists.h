@@ -6,14 +6,14 @@
 /*   By: disantam <disantam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 15:43:21 by disantam          #+#    #+#             */
-/*   Updated: 2024/05/29 15:55:22 by disantam         ###   ########.fr       */
+/*   Updated: 2024/06/05 11:16:23 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef __FT_LISTS_H__
 #define __FT_LISTS_H__
 
-#include "../libft.h"
+#include "libft.h"
 
 typedef struct s_list
 {

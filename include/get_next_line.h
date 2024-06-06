@@ -1,45 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hex.c                                           :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: disantam <disantam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/21 16:50:54 by disantam          #+#    #+#             */
-/*   Updated: 2024/06/05 11:16:00 by disantam         ###   ########.fr       */
+/*   Created: 2023/06/28 16:15:15 by disantam          #+#    #+#             */
+/*   Updated: 2024/06/06 11:30:57 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef __GET_NEXT_LINE_H__
+# define __GET_NEXT_LINE_H__
 
-static int	ft_hex_conv(size_t n, char f)
-{
-	size_t	i;
-	char	*base;
+# include <stdlib.h>
+# include <unistd.h>
 
-	i = 0;
-	base = "0123456789abcdef";
-	if (f == 'X')
-	{
-		base = "0123456789ABCDEF";
-	}
-	if (n >= 16)
-	{
-		i += ft_hex_conv(n / 16, f);
-	}
-	i += write(1, base + (n % 16), 1);
-	return (i);
-}
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1
+# endif
 
-int	ft_hex(size_t n, char f)
-{
-	int	c;
+char	*get_next_line(int fd);
+size_t	ft_strlen(const char *s);
+char	*ft_strchr(const char *s, int c);
 
-	c = 2;
-	if (f == 'p')
-	{
-		write(1, "0x", 2);
-	}
-	c += ft_hex_conv(n, f);
-	return (c);
-}
+#endif

@@ -6,12 +6,12 @@
 /*   By: disantam <disantam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 19:10:53 by disantam          #+#    #+#             */
-/*   Updated: 2024/05/29 15:49:21 by disantam         ###   ########.fr       */
+/*   Updated: 2024/06/06 11:31:22 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef __LIBFT_H__
+# define __LIBFT_H__
 
 # include <string.h>
 # include <unistd.h>

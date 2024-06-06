@@ -6,15 +6,15 @@
 /*   By: disantam <disantam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 18:19:39 by disantam          #+#    #+#             */
-/*   Updated: 2024/05/29 15:44:42 by disantam         ###   ########.fr       */
+/*   Updated: 2024/06/06 11:30:34 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#ifndef __FT_PRINTF_H__
+# define __FT_PRINTF_H__
 
 # include <stdarg.h>
-# include "../libft.h"
+# include "libft.h"
 
 /**
  * @brief Sends formatted output to stdout.
