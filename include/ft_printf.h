@@ -6,12 +6,12 @@
 /*   By: disantam <disantam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 18:19:39 by disantam          #+#    #+#             */
-/*   Updated: 2024/06/06 11:30:34 by disantam         ###   ########.fr       */
+/*   Updated: 2024/06/06 12:23:09 by disantam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef __FT_PRINTF_H__
-# define __FT_PRINTF_H__
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdarg.h>
 # include "libft.h"
